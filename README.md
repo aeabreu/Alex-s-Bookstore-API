@@ -6,18 +6,23 @@ This describes the operations that will allow you to implement the shopping cart
 
 API Operation | Description
 --- | ---
-`.addBook()` | Adds an item to the cart. Type: String
-`.removeBook()` | Removes an item from the cart. Type: String
-`.checkout()` | Purchases the items in the cart. Type: Array
+`.addBook()` | Adds an item to the cart. 
+Type: String
+`.removeBook()` | Removes an item from the cart. 
+Type: String
+`.checkout()` | Purchases the items in the cart. 
+Type: Array
 
 ## Programming Guidelines
 **Getting Started**
+
 A new user must be instantiated as a shopper for a shopping cart to be established for them.
 ```javascript
 const User = new alexShopper();
 ```
 
 **Adding a Book**
+
 This operation adds a book to the shopping cart. The parameter is the title of the book being purchased. It returns the contents of the shopping cart as an array.
 ```javascript
 User.addBook('BestSeller1');
@@ -26,6 +31,7 @@ User.addBook('BestSeller1');
 Currently `.addBook()` is only able to add one title at a time to the shopping cart. Use a new instance for each new item.
 
 **Removing a Book**
+
 This operation will remove a book from the cart. The parameter is the title of the book being removed.
 ```javascript
 User.removeBook('BestSeller1'):
@@ -33,6 +39,7 @@ User.removeBook('BestSeller1'):
 ```
 
 **Checkout**
+
 This operation will purchase all the books in the cart. Here is an example of a complete transaction:
 ```javascript
 const User = new alexShopper();
