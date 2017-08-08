@@ -6,12 +6,9 @@ This describes the operations that will allow you to implement the shopping cart
 
 API Operation | Description
 --- | ---
-`.addBook()` | Adds an item to the cart. 
-| Type: String
-`.removeBook()` | Removes an item from the cart. 
-| Type: String
-`.checkout()` | Purchases the items in the cart. 
-| Type: Array
+`.addBook()` | Adds an item to the cart. <br> Type: String
+`.removeBook()` | Removes an item from the cart. Type: String
+`.checkout()` | Purchases the items in the cart. Type: Array
 
 ## Programming Guidelines
 **Getting Started**
