@@ -86,4 +86,5 @@ try {
 }
 ```
 ## Diagram
-[Bookstore API Sequence Diagram](https://www.gliffy.com/go/publish/12165866)
+![Sequence Diagram](alex_s_bookstore_api.png)
+[Bookstore API Sequence Diagram in Gliffy](https://www.gliffy.com/go/publish/12165866)
