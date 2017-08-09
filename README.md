@@ -6,10 +6,10 @@ This describes the operations that will allow you to implement the shopping cart
 
 API Methods | Description
 --- | ---
-`.addBook(book)` | Adds an item to the cart. <br> Params: {string}
-`.removeBook()` | Removes an item from the cart. <br> Params: String
-`.checkout()` | Purchases the items in the cart. <br> Return: Boolean
-`.list()` | Returns the contents of the cart. <br> Returns: Array(string) 
+`.addBook(book)` | Adds an item to the cart. <br> Params: `string`
+`.removeBook(book)` | Removes an item from the cart. <br> Params: `string`
+`.checkout()` | Purchases the items in the cart. <br> Returns: `boolean`
+`.list()` | Returns the contents of the cart. <br> Returns: `array(string)` 
 
 ## Programming Guidelines
 **Getting Started**
