@@ -67,17 +67,22 @@ user.list();
 // => []
 ```
 ## Error Handling
-Exceptions can occur when `.removeBook()` is executed on a title that does not exist or when `.checkout()` is executed on an empty shopping cart. Use `try` and `catch` statements to guard against these errors. 
+This API will throw exceptions in the following conditions:
+
+ * if `.removeBook` is called on an empty cart
+ * if `.checkout` is called on an empty cart
+ 
+Use a `try/catch` statement if you need to facilitate these exceptions. 
 
 ```javascript
 try {
-	const User = new alexShopper();
+	const user = new AlexShopper();
 	alex.checkout(); // throws new Error('Empty cart')
 	
 	alex.addBook('BestSeller1');
 	alex.addBook('FantasyFic');
 } catch(err) {
-	console.log(err);
+	console.log(err.message);
 }
 ```
 ## Sequence Diagram
