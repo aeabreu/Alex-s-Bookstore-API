@@ -19,10 +19,11 @@ A new user must be instantiated as a shopper for a shopping cart to be establish
 const user = new AlexShopper();
 ```
 **Listing Items in the Cart**
+
 This method will return all books that have been added to the shopping cart as an array of book titles.
 ```javascript
 user.list();
-=> ['BestSeller1', 'BestSeller2']
+//=> ['BestSeller1', 'BestSeller2']
 ```
 
 **Adding a Book**
