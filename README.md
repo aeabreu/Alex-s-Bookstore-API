@@ -2,7 +2,7 @@
 This is a developer guide for Alex's Bookstore API developed as a writing assignment for FIS Global. This is a fictional API. 
 
 ## Overview
-This describes the operations that will allow you to implement the shopping cart. When a customer chooses a book for purchase it is collected in the shopping cart for checkout. 
+This describes the operations that will allow you to implement the shopping cart for Alex's bookstore. The API is designed to allow customers to choose books, add or remove them from their shopping cart, and checkout when they are done. 
 
 API Operation | Description
 --- | ---
