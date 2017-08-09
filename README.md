@@ -4,11 +4,12 @@ This is a developer guide for Alex's Bookstore API developed as a writing assign
 ## Overview
 This describes the operations that will allow you to implement the shopping cart for Alex's bookstore. The API is designed to allow customers to choose books, add or remove them from their shopping cart, and checkout when they are done. 
 
-API Operation | Description
+API Methods | Description
 --- | ---
-`.addBook()` | Adds an item to the cart. <br> params: {String} <br> return: --
-`.removeBook()` | Removes an item from the cart. <br> Type: String
-`.checkout()` | Purchases the items in the cart. <br> Type: Array
+`.addBook(book)` | Adds an item to the cart. <br> Params: {string}
+`.removeBook()` | Removes an item from the cart. <br> Params: String
+`.checkout()` | Purchases the items in the cart. <br> Return: Boolean
+`.list()` | Returns the contents of the cart. <br> Returns: Array(string) 
 
 ## Programming Guidelines
 **Getting Started**
