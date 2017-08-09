@@ -85,5 +85,5 @@ try {
 	console.log(err.message);
 }
 ```
-## Sequence Diagram
-[sd Bookstore API](https://www.gliffy.com/go/publish/12165866)
+## Diagram
+[Bookstore API Sequence Diagram](https://www.gliffy.com/go/publish/12165866)
