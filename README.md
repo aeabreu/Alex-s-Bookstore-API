@@ -34,7 +34,7 @@ user.addBook('BestSeller1');
 user.list();
 // => ['BestSeller1']
 ```
-Currently `.addBook()` is only able to add one title at a time to the shopping cart. Use a new instance for each new item.
+Currently `.addBook()` is only able to add one title at a time to the shopping cart. Call the method again for each new item.
 
 **Removing a Book**
 
