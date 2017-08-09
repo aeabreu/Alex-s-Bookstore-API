@@ -16,40 +16,54 @@ API Methods | Description
 
 A new user must be instantiated as a shopper for a shopping cart to be established for them.
 ```javascript
-const User = new alexShopper();
+const user = new AlexShopper();
+```
+**Listing Items in the Cart**
+This method will return all books that have been added to the shopping cart as an array of book titles.
+```javascript
+user.list();
+=> ['BestSeller1', 'BestSeller2']
 ```
 
 **Adding a Book**
 
-This operation adds a book to the shopping cart. The parameter is the title of the book being purchased. It returns the contents of the shopping cart as an array.
+This method adds a book to the shopping cart. The parameter is the title of the book being purchased. It returns the contents of the shopping cart as an array.
 ```javascript
-User.addBook('BestSeller1');
-=> ['BestSeller1'];
+user.addBook('BestSeller1');
+user.list();
+=> ['BestSeller1']
 ```
 Currently `.addBook()` is only able to add one title at a time to the shopping cart. Use a new instance for each new item.
 
 **Removing a Book**
 
-This operation will remove a book from the cart. The parameter is the title of the book being removed.
+This method will remove a book from the cart. The parameter is the title of the book being removed.
 ```javascript
-User.removeBook('BestSeller1'):
-=> [];
+user.removeBook('BestSeller1');
+user.list();
+=> []
 ```
 
 **Checkout**
 
-This operation will purchase all the books in the cart. Here is an example of a complete transaction:
+This method will purchase all the books in the cart. This method returns true if the transaction is successful and the cart will become empty. Here is an example of a complete transaction:
 ```javascript
-const User = new alexShopper();
-User.addBook('BestSeller1');
-=> ['BestSeller1']
-User.addBook('BestSeller2');
-=> ['BestSeller1', 'BestSeller2']
-User.addBook('FantasyFic');
+const user = new AlexShopper();
+user.addBook('BestSeller1');
+user.addBook('BestSeller2');
+user.addBook('FantasyFic');
+user.list();
 => ['BestSeller1', 'BestSeller2', 'FantasyFic']
-User.removeBook('Bestseller2');
+
+user.removeBook('Bestseller2');
+user.list();
 => ['BestSeller1', 'FantasyFic']
-User.checkout();
+
+user.checkout();
+=> true
+
+user.list();
+=> []
 ```
 ## Error Handling
 Exceptions can occur when `.removeBook()` is executed on a title that does not exist or when `.checkout()` is executed on an empty shopping cart. Use `try` and `catch` statements to guard against these errors. 
