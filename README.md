@@ -23,7 +23,7 @@ const user = new AlexShopper();
 This method will return all books that have been added to the shopping cart as an array of book titles.
 ```javascript
 user.list();
-//=> ['BestSeller1', 'BestSeller2']
+// => ['BestSeller1', 'BestSeller2']
 ```
 
 **Adding a Book**
@@ -32,7 +32,7 @@ This method adds a book to the shopping cart. The parameter is the title of the 
 ```javascript
 user.addBook('BestSeller1');
 user.list();
-=> ['BestSeller1']
+// => ['BestSeller1']
 ```
 Currently `.addBook()` is only able to add one title at a time to the shopping cart. Use a new instance for each new item.
 
@@ -42,7 +42,7 @@ This method will remove a book from the cart. The parameter is the title of the 
 ```javascript
 user.removeBook('BestSeller1');
 user.list();
-=> []
+// => []
 ```
 
 **Checkout**
@@ -54,17 +54,17 @@ user.addBook('BestSeller1');
 user.addBook('BestSeller2');
 user.addBook('FantasyFic');
 user.list();
-=> ['BestSeller1', 'BestSeller2', 'FantasyFic']
+// => ['BestSeller1', 'BestSeller2', 'FantasyFic']
 
 user.removeBook('Bestseller2');
 user.list();
-=> ['BestSeller1', 'FantasyFic']
+// => ['BestSeller1', 'FantasyFic']
 
 user.checkout();
-=> true
+// => true
 
 user.list();
-=> []
+// => []
 ```
 ## Error Handling
 Exceptions can occur when `.removeBook()` is executed on a title that does not exist or when `.checkout()` is executed on an empty shopping cart. Use `try` and `catch` statements to guard against these errors. 
