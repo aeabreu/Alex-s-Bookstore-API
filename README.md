@@ -86,3 +86,4 @@ try {
 }
 ```
 ## Sequence Diagram
+![sd Bookstore API](https://www.gliffy.com/go/publish/12165866)
